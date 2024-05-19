@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define a linguagem do documento como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para responsividade -->
+    <title>Cardápio Online</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+    <div class="main-content"> <!-- Container principal -->
+        <header> <!-- Cabeçalho -->
+            <h1>Tio Açaí Lanches</h1> <!-- Título do cabeçalho -->
+        </header>
+        <section id="entradas"> <!-- Seção de entradas -->
+            <h2>Hambúrgueres</h2> <!-- Subtítulo -->
+            <ul> <!-- Lista de hambúrgueres -->
+                <li> <!-- Item da lista -->
+                    <h3>Duplo cheeseburger com bacon</h3> <!-- Nome do item -->
+                    <span>R$ 15,00</span> <!-- Preço do item -->
+                    <input type="number" id="duplocheeseburgercombacon" value="1" min="1"> <!-- Campo para quantidade -->
+                    <button onclick="addItem('Duplo cheeseburger com bacon', 15, document.getElementById('duplocheeseburgercombacon').value)">Adicionar</button> <!-- Botão para adicionar o item -->
+                </li>
+                <li>
+                    <h3>X-tudo completo</h3>
+                    <span>R$ 12,00</span>
+                    <input type="number" id="x-tudocompleto" value="1" min="1">
+                    <button onclick="addItem('X-tudo completo', 12, document.getElementById('x-tudocompleto').value)">Adicionar</button>
+                </li>
+                <li>
+                    <h3>X-egg</h3>
+                    <span>R$ 9,00</span>
+                    <input type="number" id="x-egg" value="1" min="1">
+                    <button onclick="addItem('X-egg', 9, document.getElementById('x-egg').value)">Adicionar</button>
+                </li>
+                <li>
+                    <h3>Cheeseburger triplo</h3>
+                    <span>R$ 17,00</span>
+                    <input type="number" id="cheeseburgertriplo" value="1" min="1">
+                    <button onclick="addItem('Cheeseburger triplo', 17, document.getElementById('cheeseburgertriplo').value)">Adicionar</button>
+                </li>
+                <li>
+                    <h3>X-salada</h3>
+                    <span>R$ 11,00</span>
+                    <input type="number" id="x-salada" value="1" min="1">
+                    <button onclick="addItem('X-salada', 11, document.getElementById('x-salada').value)">Adicionar</button>
+                </li>
+                <li>
+                    <h3>Cheeseburger simples</h3>
+                    <span>R$ 12,00</span>
+                    <input type="number" id="cheeseburguersimples" value="1" min="1">
+                    <button onclick="addItem('Cheeseburger simples', 12, document.getElementById('cheeseburguersimples').value)">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+        <button id="cartBtn">Ver Carrinho</button> <!-- Botão para abrir o carrinho -->
+    </div>
+
+    <div id="cartModal" class="modal"> <!-- Modal do carrinho -->
+        <div class="modal-content"> <!-- Conteúdo do modal -->
+            <span class="close">&times;</span> <!-- Botão de fechar o modal -->
+            <h2>Carrinho de Compras</h2> <!-- Título do modal -->
+            <ul id="cart-items"></ul> <!-- Lista de itens no carrinho -->
+        </div>
+    </div>
+
+    <footer> <!-- Rodapé -->
+        <button id="sendOrder" onclick="sendOrder()">Enviar Pedido via WhatsApp</button> <!-- Botão para enviar o pedido -->
+    </footer>
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript externo -->
+</body>
+</html>
