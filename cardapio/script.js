@@ -24,7 +24,7 @@ function updateCart() {
         cartItemsElement.appendChild(listItem);
     });
 
-    document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2)}`;
+    document.getElementById('cartTotal').textContent = `\nTotal: R$ ${total.toFixed(2)}`;
 }
 
 function openCartPopup() {
