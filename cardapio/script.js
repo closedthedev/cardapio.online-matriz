@@ -95,3 +95,50 @@ for (var i = 0; i < buttons.length; i++) {
         }, 3000); // 3000 milissegundos = 3 segundos
     });
 }
+
+// Função para abrir o popup
+function openPopup() {
+    document.getElementById('popup').style.display = "block";
+}
+
+// Função para fechar o popup
+function closePopup() {
+    document.getElementById('popup').style.display = "none";
+}
+
+// Adicionar event listener para abrir o popup ao clicar no item do produto
+document.getElementById('productItem').addEventListener('click', function(event) {
+    // Verifica se o clique não foi no botão "Adicionar"
+    if (!event.target.closest('#botaoAdicionar')) {
+        openPopup();
+    }
+});
+
+// Previne que o clique no botão "Adicionar" abra o popup
+document.getElementById('botaoAdicionar').addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+// Adicionar event listener para fechar o popup ao clicar no botão "close"
+document.getElementsByClassName('close')[0].onclick = function() {
+    closePopup();
+}
+
+// Adicionar event listener para fechar o popup ao clicar fora do conteúdo do popup
+window.onclick = function(event) {
+    if (event.target == document.getElementById('popup')) {
+        closePopup();
+    }
+}
+
+window.addEventListener('scroll', function() {
+    var stickyElement = document.getElementById('stickyElement');
+    var stickyContainer = document.querySelector('.sticky-container');
+    var stickyContainerOffset = stickyContainer.offsetTop;
+    
+    if (window.pageYOffset >= stickyContainerOffset) {
+        stickyElement.classList.add('sticky');
+    } else {
+        stickyElement.classList.remove('sticky');
+    }
+});
