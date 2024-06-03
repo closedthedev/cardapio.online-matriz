@@ -249,7 +249,7 @@ footer {
 }
 
 #sendOrder:hover {
-    background-color: #1ebd50;
+    background-color: #117530;
 }
 
 .main-content {
@@ -542,3 +542,92 @@ a:hover {
     left: 0px;
 }
 
+
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.modal-left {
+    width: 50%;
+    float: left;
+}
+
+.modal-right {
+    width: 50%;
+    float: right;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.modal-informations {
+    position: relative;
+    left: 700px;
+    margin-top: -104px;
+}
+
+li {
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+span.close {
+    color: red;
+    font-size: 37px;
+    position: relative;
+    margin-top: -10px;
+    left: -12px;
+    background-color: #fff5f5;
+
+}
+
+.popup {
+    transition: all 0.3s ease;
+}
+
+#closeCartPopup {
+    
+    background-image: url(icons8-close-48.png);
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 22px;
+    margin-top: -56px;
+    background-color: transparent;
+}
+
+#closeItem {
+    
+    background-image: url(icons8-close-48.png);
+    background-size: cover;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    left: 2px;
+    margin-top: -42px;
+    background-color: transparent;
+}
