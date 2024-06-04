@@ -60,7 +60,7 @@ function sendOrder() {
 
     message += `\nTotal: R$ ${total.toFixed(2)}`;
 
-    const whatsappNumber = "5521999999999";
+    const whatsappNumber = "5521966454694";
     const encodedMessage = encodeURIComponent(message);
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
