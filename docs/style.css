@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: #ffffff;
     touch-action: manipulation;
+   
 }
 
 img {
@@ -16,6 +17,7 @@ img {
     position: relative;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -47,6 +49,7 @@ img {
     margin-bottom: 10px;
     border-radius: 8px;
     z-index: 1;
+    margin-top: 15px;
 }
 
 .mainLogo {
@@ -60,6 +63,7 @@ img {
     width: 32px;
     height: 32px;
     position: relative;
+    left: 10px;
 
 }
 
@@ -67,6 +71,7 @@ img {
     width: 32px;
     height: 32px;
     position: relative;
+    left: 13px;
 
 }
 
@@ -262,15 +267,16 @@ footer {
 }
 
 a {
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
-    color: black;
+    color: #a06d6d;
 }
 
 
 /* Muda a cor dos links quando o mouse passa sobre eles */
 a:hover {
     color: rgb(255, 0, 0); /* Cor ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .cart-popup {
@@ -360,7 +366,7 @@ a:hover {
     display: flex;
     align-items: center; 
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 35px;
 
 }
 
@@ -369,13 +375,13 @@ a:hover {
     display: flex;
     gap: 25px;
     font-weight: bolder;
-    border: 1px solid rgb(221, 221, 221);
+    border: 0px solid rgb(221, 221, 221);
     padding: 3px 35px;
     border-radius: 8px;
 }
     
 .menu-link {
-    border-right: 1px solid #ddd;
+    
     padding-right: 35px;
     padding-left: 0px;
 }
@@ -497,11 +503,9 @@ a:hover {
 
 .sticky-element {
     display: flex;
-    padding: 40px;
-    transition: all 0.3s ease 0s;
     align-items: center;
     justify-content: center;
-    margin-top: -25px;
+    transition: all 0.3s ease 0s;
 }
 
 .sticky-element.sticky {
@@ -509,8 +513,8 @@ a:hover {
     top: -45px;
     width: 100%;
     z-index: 1000;
-    background-color: #F1F1F1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px;
     left: 0px;
 }
 
@@ -542,6 +546,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
+    
 
 }
 
@@ -706,6 +711,7 @@ span.close {
         left: 30%;
         top: 5%;
         
+        
     }
 
     .textoPorCima {
@@ -758,9 +764,10 @@ span.close {
     .link-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        border: 1px solid #ddd;
         border-radius: 11px;
         padding: 5px;
+        border: 0px solid #ddd;
+        margin-top: 2px;
     }
 
 }
@@ -789,7 +796,7 @@ span.close {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border-radius: 11px;
         padding: 5px;
-        border: 1px solid #ddd;
+        border: 0px solid #ddd;
     }
 }
 
@@ -816,7 +823,7 @@ span.close {
         justify-items: center;
         border-radius: 11px;
         padding: 5px;
-        border: 1px solid #ddd;
+        border: 0px solid #ddd;
     }
 }
 
@@ -844,7 +851,7 @@ span.close {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border-radius: 11px;
         padding: 5px;
-        border: 1px solid #ddd;
+        border: 0px solid #ddd;
     }
 
 }
@@ -901,7 +908,7 @@ span.close {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border-radius: 11px;
         padding: 5px;
-        border: 1px solid #ddd;
+        border: 0px solid #ddd;
     }
 }
 
@@ -930,3 +937,4 @@ span.close {
         padding: 30px;
     }
 }
+
