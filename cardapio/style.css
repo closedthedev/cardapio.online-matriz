@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: #ffffff;
     touch-action: manipulation;
+    margin-top: -1px;
    
 }
 
@@ -248,7 +249,6 @@ footer {
 
     background-color: #ffffff;
     display: flex;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 1.0);
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
