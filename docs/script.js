@@ -167,6 +167,7 @@ var imagens = [
     "assets/pizzamar.jpg",
     "assets/pizzaportuguesa.jpg",
     "assets/pizzavegana.jpg",
+    "assets/cocacola2lt.png",
     // Adicione todos os caminhos para as suas imagens aqui
 ];
 
