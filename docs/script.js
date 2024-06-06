@@ -140,3 +140,39 @@ function openItemDetails(name, price, image, description) {
         }
     };
 }
+
+// Lista de caminhos para as imagens
+var imagens = [
+    "assets/batata.jpg",
+    "assets/brahma.jpg",
+    "assets/burger.jpg",
+    "assets/burgertriplo.jpg",
+    "assets/cocacola.png",
+    "assets/guarana2lt.png",
+    "assets/heineken.png",
+    "assets/icons8-cart-64.png",
+    "assets/icons8-close-48.png",
+    "assets/imagem1.icons8-info-50.png",
+    "assets/imagem2.icons8-share-48.png",
+    "assets/imagem3.mozedlogo.png",
+    "assets/mozer_capa.png",
+    "assets/pepsi1.png",
+    "assets/pizza.jpg",
+    "assets/pizzadoce.jpg",
+    "assets/pizzafrangocatupiry.jpg",
+    "assets/pizzamar.jpg",
+    "assets/pizzaportuguesa.jpg",
+    "assets/pizzavegana.jpg",
+    // Adicione todos os caminhos para as suas imagens aqui
+];
+
+// Função para pré-carregar as imagens
+function preloadImagens() {
+    for (var i = 0; i < imagens.length; i++) {
+        var img = new Image();
+        img.src = imagens[i];
+    }
+}
+
+// Chame a função de pré-carregamento
+preloadImagens();
