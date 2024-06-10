@@ -161,12 +161,12 @@ var imagens = [
     "assets/imagem3.mozedlogo.png",
     "assets/mozer_capa.png",
     "assets/pepsi1.png",
-    "assets/pizza.jpg",
-    "assets/pizzadoce.jpg",
-    "assets/pizzafrangocatupiry.jpg",
-    "assets/pizzamar.jpg",
-    "assets/pizzaportuguesa.jpg",
-    "assets/pizzavegana.jpg",
+    "assets/pizzacogumelo.png",
+    "assets/pizza4queijos.png",
+    "assets/pizzamargueritha.png",
+    "assets/pizzabacon.png",
+    "assets/pizzafrangocatupiry.png",
+    "assets/pizzacalabresa.png",
     "assets/cocacola2lt.png",
     // Adicione todos os caminhos para as suas imagens aqui
 ];
