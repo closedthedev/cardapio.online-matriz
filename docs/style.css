@@ -932,7 +932,3 @@ span.close {
 }
 
 
-.sticky-container {
-    overflow-x: auto; /* Permite a rolagem horizontal */
-    white-space: nowrap; /* Impede que os elementos quebrem em múltiplas linhas */
-}
